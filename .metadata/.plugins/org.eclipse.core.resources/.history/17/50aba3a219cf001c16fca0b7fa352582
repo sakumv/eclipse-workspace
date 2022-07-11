@@ -1,0 +1,44 @@
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+import io.restassured.path.json.JsonPath;
+
+import files.payload;
+import io.restassured.RestAssured;
+
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+
+
+public class DynamicJson {
+	
+	@Test(dataProvider="BookData")
+	public void addBook(String bname, String isbn, String aisle, String bauthor) {
+		RestAssured.baseURI = "http://216.10.245.166";
+		
+		String res = given().log().all().header("Content-Type","application/json")
+		.body(payload.addBook(bname,isbn,aisle,bauthor))
+		.when().post("/Library/Addbook.php")
+		.then().log().all()
+		.assertThat().statusCode(200)
+		.body("Msg",equalTo("successfully added"))
+		.extract().response().asString();
+		
+		
+		JsonPath js = new JsonPath(res);
+		String book_id = js.get("ID");
+		
+		System.out.println(book_id);
+		
+		
+	}
+
+	@DataProvider(name="BookData")
+	public Object[][] getDate() {
+		
+		return new Object[][] {{"Book 1", "Isbn 1", "ANo 1", "Anon"}, {"Book 2", "Isbn 2", "ANo 2", "Anon"}, {"Book 3", "Isbn 3", "ANo 3", "Anon"}, {"Book 4", "Isbn 4", "ANo 4", "Anon"}};
+		
+	}
+	
+	
+}

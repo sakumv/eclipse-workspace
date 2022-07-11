@@ -1,0 +1,202 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+    },
+    "accuracy": 50,
+    "name": "Test",
+    "phone_number": "1-408-996-2031",
+    "address": "Cabot place",
+    "types": [
+        "Bangle Park",
+        "shop"
+    ],
+    "website": "http://www.test.com",
+    "language": "Tamil"
+}
+HTTP/1.1 200 OK
+Date: Mon, 23 May 2022 22:53:09 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "0b35bf32675a21185efa3c8c470e0001",
+    "scope": "APP",
+    "reference": "dbd7708f878774f0df0ae5d998e1b7ebdbd7708f878774f0df0ae5d998e1b7eb",
+    "id": "dbd7708f878774f0df0ae5d998e1b7eb"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=0b35bf32675a21185efa3c8c470e0001
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=0b35bf32675a21185efa3c8c470e0001
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 23 May 2022 22:53:10 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 228
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-38.383494",
+        "longitude": "33.427362"
+    },
+    "accuracy": "50",
+    "name": "Test",
+    "phone_number": "1-408-996-2031",
+    "address": "Cabot place",
+    "types": "Bangle Park,shop",
+    "website": "http://www.test.com",
+    "language": "Tamil"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123&place_id=0b35bf32675a21185efa3c8c470e0001
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=0b35bf32675a21185efa3c8c470e0001
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": -38.383494,
+        "lng": 33.427362
+    },
+    "accuracy": 50,
+    "name": "Portnov",
+    "phone_number": "1-408-996-2031",
+    "address": "Sunnyvale, LosAltos",
+    "types": [
+        "Bangle Park",
+        "shop"
+    ],
+    "website": "http://www.test.com",
+    "language": "Russian"
+}
+HTTP/1.1 200 OK
+Date: Mon, 23 May 2022 22:53:11 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "1dc6a14d42dc6cc24fc769adb616d3b8",
+    "scope": "APP",
+    "reference": "ef2fc34e7c8170a718a322958ea14a93ef2fc34e7c8170a718a322958ea14a93",
+    "id": "ef2fc34e7c8170a718a322958ea14a93"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=0b35bf32675a21185efa3c8c470e0001&place_id=1dc6a14d42dc6cc24fc769adb616d3b8
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=[0b35bf32675a21185efa3c8c470e0001, 1dc6a14d42dc6cc24fc769adb616d3b8]
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 23 May 2022 22:53:12 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 241
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-38.383494",
+        "longitude": "33.427362"
+    },
+    "accuracy": "50",
+    "name": "Portnov",
+    "phone_number": "1-408-996-2031",
+    "address": "Sunnyvale, LosAltos",
+    "types": "Bangle Park,shop",
+    "website": "http://www.test.com",
+    "language": "Russian"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123&place_id=0b35bf32675a21185efa3c8c470e0001&place_id=1dc6a14d42dc6cc24fc769adb616d3b8
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=[0b35bf32675a21185efa3c8c470e0001, 1dc6a14d42dc6cc24fc769adb616d3b8]
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "1dc6a14d42dc6cc24fc769adb616d3b8"
+}
+HTTP/1.1 200 OK
+Date: Mon, 23 May 2022 22:53:13 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}

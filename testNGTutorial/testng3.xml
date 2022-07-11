@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Main Project name">
+	<parameter name="URL" value="http://www.google.com"></parameter>
+	
+	<test  name="Module name" > 
+		<groups>
+			<run> 
+				<include name= "Smoke"/> 
+			</run>> 
+		</groups>
+  	
+    	<classes>
+      		<class name="testNGPackage.runTestNg"/>
+      		<class name="testNGPackage.runtestNGXML"/>
+      		<class name="testNGPackage.runModule2"/>
+      		<class name="testNGPackage.runModule3"/>
+    	</classes>
+  	</test>
+	<!--TestNGHelperAttribute
+	
+	enabled=false
+	dependsOnMethods={"",""} ==> give list of methods to be executed prior to current methos
+	timeOut =3000 // 
+	
+	-->
+
+</suite> 

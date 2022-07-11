@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+//To pass the package name and execute all the test cases in the package
+-->
+<suite name="Main Project name">
+  <test  name="Module name" > 
+	<packages>
+		<package name="testNGPackage"></package>	
+	</packages>
+  </test> 
+</suite> 

@@ -1,0 +1,1 @@
+new java text file for attaching in jira

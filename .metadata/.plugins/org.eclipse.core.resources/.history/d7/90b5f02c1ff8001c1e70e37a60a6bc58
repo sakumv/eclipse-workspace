@@ -1,0 +1,32 @@
+import io.restassured.RestAssured;
+import static io.restassured.RestAssured.*;
+
+
+public class APIExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Validate if Sign in in ask -portnov is working as expected 
+
+		//given --  input all the details
+		//when -- Submit all required details and methods etc
+		//then -- check the expected conditions
+		
+		String rbody = "{\r\n"
+				+ "  \"email\": \"saku.jay+1@gmail.com\",\r\n"
+				+ "  \"password\": \"12345Abc\"\r\n"
+				+ "}";
+		
+		RestAssured.baseURI = "http://ask-qa.portnov.com/api/v1";
+		given().header("Content-Type","application/json")
+		//.queryParam("key", "value")
+		.body(rbody)
+		.when().post("/sign-in")
+		.then().log().all()
+		.assertThat().statusCode(200)
+		
+		
+	}
+
+}

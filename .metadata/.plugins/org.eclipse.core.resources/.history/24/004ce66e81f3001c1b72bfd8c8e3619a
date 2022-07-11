@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Main Project name">
+	<groups>
+		<run> 
+		<include name= "Smoke"></include> </run>> 
+	</groups>
+  	<test  name="Module name" > 
+    	<classes>
+      		<class name="testNGPackage.runTestNg"/>
+      		<class name="testNGPackage.runtestNGXML"/>
+      		<class name="testNGPackage.runModule2"/>
+      		<class name="testNGPackage.runModule3"/>
+    	</classes>
+  	</test>
+	
+
+</suite> 

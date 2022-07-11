@@ -1,0 +1,10 @@
+package SeleniumTest;
+
+public class loginLinkedin {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

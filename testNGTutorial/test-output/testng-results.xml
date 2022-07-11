@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="8" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-24T16:43:27 PDT" name="Main Project name" finished-at="2022-06-24T16:43:27 PDT" duration-ms="88">
+    <groups>
+      <group name="Smoke">
+        <method signature="runtestNGXML.test1()[pri:0, instance:testNGPackage.runtestNGXML@78b66d36]" name="test1" class="testNGPackage.runtestNGXML"/>
+        <method signature="runModule2.m2test1()[pri:0, instance:testNGPackage.runModule2@4f209819]" name="m2test1" class="testNGPackage.runModule2"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-06-24T16:43:27 PDT" name="Module name" finished-at="2022-06-24T16:43:27 PDT" duration-ms="38">
+      <class name="testNGPackage.runtestNGXML">
+        <test-method is-config="true" signature="test0()[pri:0, instance:testNGPackage.runtestNGXML@78b66d36]" started-at="2022-06-24T16:43:27 PDT" name="test0" finished-at="2022-06-24T16:43:27 PDT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test0 -->
+        <test-method signature="test1()[pri:0, instance:testNGPackage.runtestNGXML@78b66d36]" started-at="2022-06-24T16:43:27 PDT" name="test1" finished-at="2022-06-24T16:43:27 PDT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method signature="test2(java.lang.String)[pri:0, instance:testNGPackage.runtestNGXML@78b66d36]" started-at="2022-06-24T16:43:27 PDT" name="test2" finished-at="2022-06-24T16:43:27 PDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ValueTest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method is-config="true" signature="test3()[pri:0, instance:testNGPackage.runtestNGXML@78b66d36]" started-at="2022-06-24T16:43:27 PDT" name="test3" finished-at="2022-06-24T16:43:27 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+      </class> <!-- testNGPackage.runtestNGXML -->
+    </test> <!-- Module name -->
+    <test started-at="2022-06-24T16:43:27 PDT" name="Module name 2" finished-at="2022-06-24T16:43:27 PDT" duration-ms="3">
+      <class name="testNGPackage.runModule2">
+        <test-method signature="m2test1()[pri:0, instance:testNGPackage.runModule2@4f209819]" started-at="2022-06-24T16:43:27 PDT" name="m2test1" finished-at="2022-06-24T16:43:27 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2test1 -->
+        <test-method signature="m2test2()[pri:0, instance:testNGPackage.runModule2@4f209819]" started-at="2022-06-24T16:43:27 PDT" name="m2test2" finished-at="2022-06-24T16:43:27 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m2test2 -->
+      </class> <!-- testNGPackage.runModule2 -->
+    </test> <!-- Module name 2 -->
+    <test started-at="2022-06-24T16:43:27 PDT" name="Module name 3 " finished-at="2022-06-24T16:43:27 PDT" duration-ms="9">
+      <class name="testNGPackage.runModule3">
+        <test-method is-config="true" signature="bmethod()[pri:0, instance:testNGPackage.runModule3@130161f7]" started-at="2022-06-24T16:43:27 PDT" name="bmethod" finished-at="2022-06-24T16:43:27 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmethod -->
+        <test-method signature="m3test3()[pri:0, instance:testNGPackage.runModule3@130161f7]" started-at="2022-06-24T16:43:27 PDT" name="m3test3" finished-at="2022-06-24T16:43:27 PDT" duration-ms="2" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at testNGPackage.runModule3.m3test3(runModule3.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3test3 -->
+        <test-method is-config="true" signature="amethod()[pri:0, instance:testNGPackage.runModule3@130161f7]" started-at="2022-06-24T16:43:27 PDT" name="amethod" finished-at="2022-06-24T16:43:27 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amethod -->
+        <test-method signature="m3test4()[pri:0, instance:testNGPackage.runModule3@130161f7]" started-at="2022-06-24T16:43:27 PDT" name="m3test4" finished-at="2022-06-24T16:43:27 PDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- m3test4 -->
+        <test-method is-config="true" signature="bmethod()[pri:0, instance:testNGPackage.runModule3@130161f7]" started-at="2022-06-24T16:43:27 PDT" name="bmethod" finished-at="2022-06-24T16:43:27 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmethod -->
+        <test-method is-config="true" signature="amethod()[pri:0, instance:testNGPackage.runModule3@130161f7]" started-at="2022-06-24T16:43:27 PDT" name="amethod" finished-at="2022-06-24T16:43:27 PDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amethod -->
+      </class> <!-- testNGPackage.runModule3 -->
+    </test> <!-- Module name 3  -->
+  </suite> <!-- Main Project name -->
+</testng-results>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Main Project name]" guice-stage="DEVELOPMENT">
+  <parameter name="URL" value="http://www.google.com"/>
+  <listeners>
+    <listener class-name="testNGPackage.ListenersTest"/>
+  </listeners>
+  <test thread-count="5" name="Module name 3 (failed)">
+    <classes>
+      <class name="testNGPackage.runModule3">
+        <methods>
+          <include name="amethod"/>
+          <include name="m3test3"/>
+          <include name="bmethod"/>
+        </methods>
+      </class> <!-- testNGPackage.runModule3 -->
+    </classes>
+  </test> <!-- Module name 3 (failed) -->
+</suite> <!-- Failed suite [Main Project name] -->

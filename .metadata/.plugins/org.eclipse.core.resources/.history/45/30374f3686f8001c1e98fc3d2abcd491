@@ -1,0 +1,14 @@
+package dataFiles;
+
+public class signInUserData {
+	public static String signInDetails()
+	{
+		//Give the User name and password for signing in
+		String det =  "{\r\n"
+				+ "  \"email\": \"saku.jay@gmail.com\",\r\n"
+				+ "  \"password\": \"12345Abc\"\r\n"
+				+ "}";
+	}
+	
+
+}

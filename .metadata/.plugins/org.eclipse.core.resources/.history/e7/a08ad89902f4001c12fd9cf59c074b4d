@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Main Project name">
+	<parameter name="URL" value="http://www.google.com"></parameter>
+	
+	
+	  <test  name="Module name" > 
+	    <classes>
+	      <class name="testNGPackage.runTestNg"/>
+	      <class name="testNGPackage.runtestNGXML"/>
+	    </classes>
+	  </test> 
+	
+	    <test  name="Module name 2" >
+	    <classes>
+	      <class name="testNGPackage.runModule2"/>
+	    </classes>
+	  </test> 
+	    <test  name="Module name 3 " > 
+	    <classes>
+	    	<!--To exclude a particular test / put the details of the method here for execlude-->
+	      <class name="testNGPackage.runModule3">
+	      	<methods>
+	      		<exclude name="m3.*"></exclude>
+	      	</methods>
+	      </class>
+	    </classes>
+	  </test> 
+</suite> 
